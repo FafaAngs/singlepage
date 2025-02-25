@@ -1,0 +1,251 @@
+html{
+      scroll-behavior: smooth;
+}
+body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(green.gif) no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+   text-shadow: 0 0 5px seagreen;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+    border-radius: 50px;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+    border-radius: 20px; 
+    margin: 20px 0;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); 
+   box-shadow: rgb(21, 255, 0) 0px 1px 20px;
+    border: 2px solid #fff; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.container h1 {
+    font-size: 32px;
+    color: red;
+    text-shadow: 0 0 5px seagreen;
+    margin-bottom: 10px;
+}
+strong{
+    color:red;
+}
+
+.container p {
+    font-size: 18px; 
+    text-shadow: 0 0 5px seagreen;
+}
+h2{
+    color: #000000;
+    font-size: 35px;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.skillbox {
+    width: 90%;
+    max-width: 300px; 
+    padding: 10px;
+    margin: 10px 0; 
+    border-radius: 15px; 
+    box-shadow: rgb(21, 255, 0) 0px 1px 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer p,h4{
+    text-shadow: 0 0 5px seagreen;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1000;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .nav ul.active {
+        display: flex;
+    }
+    .nav{
+        display:flex;
+        justify-content: space-between;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+    .container h1 {
+        font-size: 28px;
+    }
+    .container p {
+        font-size: 16px;
+    }
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+    .skills img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#game{
+     padding: 10px;
+    width:60px;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+#web{
+     padding: 10px;
+    width:170px;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+#system{
+     padding: 10px;
+    width:120px;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+#video{
+     padding: 10px;
+    width:130px;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+#app{
+     padding: 10px;
+    width:145px;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+#exer img {
+    max-width: 100%;
+    height: auto;
+}
+.pokemons {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;   
+}
+
+.nopeeking {
+    border-bottom-left-radius: 20px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-bottom: -22px;
+    margin-left: -22px;
+}
+
+.charizard {
+ margin-left: auto;
+ margin-bottom: -22px;
+    margin-right: -22px;
+}
+
